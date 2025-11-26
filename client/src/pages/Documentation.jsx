@@ -18,7 +18,6 @@ export default function Documentation() {
                 and should not be treated as a medical tool.
             </p>
 
-            {/* NEW SECTION — FRONTEND + BACKEND */}
             <h3 className={styles.subheading}>How the Frontend & Backend Work Together</h3>
             <p className={styles.text}>
                 MediTrack is a full MERN-stack application. The frontend is built with React 
@@ -49,13 +48,12 @@ export default function Documentation() {
                 is closed and opened again.
             </p>
 
-            {/* URLs Section */}
             <h3 className={styles.subheading}>Deployed Application Links</h3>
             <ul className={styles.list}>
                 <li>
                     <strong>Frontend (React on Netlify):</strong><br />
-                    <a href="https://aquamarine-cheesecake-3def01.netlify.app/" target="_blank">
-                        https://aquamarine-cheesecake-3def01.netlify.app/
+                    <a href="https://meditrack-project.netlify.app/" target="_blank">
+                        https://meditrack-project.netlify.app/
                     </a>
                 </li>
                 <li>
@@ -68,8 +66,7 @@ export default function Documentation() {
                     <strong>MongoDB Atlas:</strong> Used to store medicines and user data.
                 </li>
             </ul>
-
-            {/* ORIGINAL CONTENT BELOW */}
+            
             <h3 className={styles.subheading}>How to Use the App</h3>
             <ul className={styles.list}>
                 <li>
