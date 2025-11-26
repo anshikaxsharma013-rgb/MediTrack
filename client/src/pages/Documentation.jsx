@@ -18,6 +18,58 @@ export default function Documentation() {
                 and should not be treated as a medical tool.
             </p>
 
+            {/* NEW SECTION — FRONTEND + BACKEND */}
+            <h3 className={styles.subheading}>How the Frontend & Backend Work Together</h3>
+            <p className={styles.text}>
+                MediTrack is a full MERN-stack application. The frontend is built with React 
+                and deployed on <strong>Netlify</strong>, while the backend API is built with 
+                Express + Node.js and deployed on <strong>Render</strong>.
+            </p>
+
+            <ul className={styles.list}>
+                <li>
+                    The React frontend sends requests using <strong>Axios</strong> to the backend API.
+                </li>
+                <li>
+                    Backend routes (GET, POST, PUT, DELETE) live on the Render server and 
+                    communicate with <strong>MongoDB Atlas</strong>.
+                </li>
+                <li>
+                    When the app needs to load, add, edit, or delete medicines, 
+                    it contacts the backend through the <strong>/api/medicines</strong> routes.
+                </li>
+                <li>
+                    The backend validates data, interacts with the MongoDB database, 
+                    then sends JSON responses back to the React frontend.
+                </li>
+            </ul>
+
+            <p className={styles.text}>
+                This ensures full persistence of data, even after page refreshes or when the app 
+                is closed and opened again.
+            </p>
+
+            {/* URLs Section */}
+            <h3 className={styles.subheading}>Deployed Application Links</h3>
+            <ul className={styles.list}>
+                <li>
+                    <strong>Frontend (React on Netlify):</strong><br />
+                    <a href="https://aquamarine-cheesecake-3def01.netlify.app/" target="_blank">
+                        https://aquamarine-cheesecake-3def01.netlify.app/
+                    </a>
+                </li>
+                <li>
+                    <strong>Backend (Express API on Render):</strong><br />
+                    <a href="https://meditrack-backend-yyqm.onrender.com/api/medicines" target="_blank">
+                        https://meditrack-backend-yyqm.onrender.com/api/medicines
+                    </a>
+                </li>
+                <li>
+                    <strong>MongoDB Atlas:</strong> Used to store medicines and user data.
+                </li>
+            </ul>
+
+            {/* ORIGINAL CONTENT BELOW */}
             <h3 className={styles.subheading}>How to Use the App</h3>
             <ul className={styles.list}>
                 <li>
@@ -33,11 +85,7 @@ export default function Documentation() {
                     Use <strong>Symptom Help </strong> to get OTC medicine suggestions.
                 </li>
                 <li>
-                    A full list of project sources and external references is available on the
-                   <strong> Sources </strong> page in the navigation menu.
-                </li>
-                <li>
-                    Prohibited medicines are alerted for, using “alert mode”.
+                    Prohibited medicines trigger a special <strong>alert mode</strong>.
                 </li>
             </ul>
 
@@ -67,6 +115,12 @@ export default function Documentation() {
                 <li>Full appointment calendar</li>
                 <li>Better pharmacy lookup with live API</li>
             </ul>
+
+            <h3 className={styles.subheading}>References</h3>
+            <p className={styles.text}>
+                A full list of project sources and external references is available on the
+                <strong> Sources </strong> page in the navigation menu.
+            </p>
         </div>
     );
 }
