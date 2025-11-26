@@ -98,28 +98,6 @@ export default function Documentation() {
       </ul>
 
       {/* ------------------------------------------------------- */}
-      <h3 className={styles.subheading}>Local Development Instructions</h3>
-      <p className={styles.text}>To run MediTrack locally:</p>
-
-      <h4 className={styles.smallheading}>Frontend:</h4>
-      <pre className={styles.code}>
-        npm install
-        npm run dev
-      </pre>
-
-      <h4 className={styles.smallheading}>Backend:</h4>
-      <pre className={styles.code}>
-        cd server
-        npm install
-        npm run dev
-      </pre>
-
-      <p className={styles.text}>
-        Make sure your <strong>.env</strong> file contains your MongoDB Atlas connection string:
-      </p>
-      <pre className={styles.code}>MONGO_URI="your connection string here"</pre>
-
-      {/* ------------------------------------------------------- */}
       <h3 className={styles.subheading}>Project Requirements Checklist</h3>
       <ul className={styles.list}>
         <li>✔ React components + state + props</li>
