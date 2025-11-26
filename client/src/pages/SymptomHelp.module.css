@@ -1,0 +1,98 @@
+.container {
+  max-width: 800px;
+  margin: auto;
+  background: var(--card-bg);
+  color: var(--text-color);
+  padding: 30px;
+  border-radius: 15px;
+}
+
+.heading {
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.filters {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+}
+
+select {
+  padding: 12px;
+  font-size: 18px;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+}
+
+.buttonRow {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Suggest Medicines (brand color) */
+.suggestButton {
+  background: #2563eb;
+  color: white;
+  padding: 12px;
+  font-size: 18px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.suggestButton:hover {
+  background: #1e4ec7;
+}
+
+/* Find Pharmacy Button (green) */
+.pharmacyButton {
+  background: #16a34a;
+  color: white;
+  padding: 12px;
+  font-size: 18px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.pharmacyButton:hover {
+  background: #12833c;
+}
+
+.results {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
+
+.card {
+  padding: 14px;
+  font-size: 18px;
+  background: var(--card-bg);
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+
+.noData {
+  text-align: center;
+  opacity: 0.6;
+  padding: 20px;
+  font-size: 18px;
+}

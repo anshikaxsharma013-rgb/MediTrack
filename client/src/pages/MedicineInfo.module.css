@@ -1,0 +1,18 @@
+.container {
+  background: var(--card);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  margin-top: 2rem;
+}
+
+.heading {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  color: var(--primary);
+}
+
+.desc {
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}

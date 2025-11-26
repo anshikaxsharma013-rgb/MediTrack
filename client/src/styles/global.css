@@ -1,0 +1,50 @@
+/* GLOBAL RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* THEME VARIABLES */
+:root {
+  --bg: #f5f7fa;
+  --card: #ffffff;
+  --text: #1a1a1a;
+  --primary: #2563eb;
+  --shadow: 0px 4px 12px rgba(0,0,0,0.06);
+}
+
+/* DARK MODE */
+:root.dark {
+  --bg: #0d1117;
+  --card: #161b22;
+  --text: #e5e7eb;
+  --primary: #3b82f6;
+  --shadow: 0px 4px 18px rgba(0,0,0,0.45);
+}
+
+/* DANGER MODE (for prohibited medicines) */
+:root.danger {
+  --bg: #0b0b0b;
+  --card: #170000;
+  --text: #ff4d4d;
+  --primary: #ff0000;
+  --shadow: 0px 0px 25px rgba(255,0,0,0.25);
+}
+
+/* GLOBAL BODY STYLE */
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  transition: all 0.25s ease-in-out;
+}
+
+/*smoother transitions*/
+body, input, button, textarea, select {
+  transition: background 0.25s ease, color 0.25s ease;
+}

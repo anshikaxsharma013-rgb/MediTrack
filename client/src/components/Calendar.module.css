@@ -1,0 +1,70 @@
+.wrapper {
+  margin-top: 2rem;
+}
+
+.heading {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  color: var(--primary);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0.8rem;
+}
+
+.dayCard {
+  background: var(--card);
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  cursor: pointer;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.25s ease;
+}
+
+.dayCard:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+.dayNumber {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Status Colors */
+.taken {
+  background: #16a34a !important; /* Green */
+  color: white;
+}
+
+.missed {
+  background: #dc2626 !important; /* Red */
+  color: white;
+}
+
+.upcoming {
+  background: #2563eb !important; /* Blue */
+  color: white;
+}
+
+.empty {
+  background: #e5e7eb; /* Light grey */
+  color: #333;
+}
+
+/* Details box */
+.details {
+  margin-top: 2rem;
+  background: var(--card);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+}
+
+.list {
+  margin-top: 1rem;
+  line-height: 1.6;
+}

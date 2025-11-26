@@ -1,0 +1,9 @@
+.list {
+  margin-top: 1.5rem;
+}
+
+.empty {
+  text-align: center;
+  opacity: 0.6;
+  padding: 1.5rem;
+}

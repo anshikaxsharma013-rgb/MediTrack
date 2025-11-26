@@ -1,0 +1,26 @@
+.container {
+  background: var(--card);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+}
+
+.heading {
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+  color: var(--primary);
+}
+
+.placeholderCard {
+  background: var(--bg);
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 1px dashed var(--primary);
+  margin-bottom: 1.5rem;
+  opacity: 0.7;
+  font-style: italic;
+}
+
+.calendarSection {
+  margin-top: 2rem;
+}

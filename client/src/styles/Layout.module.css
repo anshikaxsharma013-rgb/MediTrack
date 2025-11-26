@@ -1,0 +1,7 @@
+.container {
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: var(--card);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+}
